@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+     <View
+         android:layout_width="match_parent"
+         android:id="@+id/view"
+         android:layout_height="150dp"
+        android:background="#0583EA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgae1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_vector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a daily goal"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgae1"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview1"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casual"
+            android:padding="20dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#0583EA" />
+        <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="13"
+               android:background="@drawable/circle"
+               android:layout_gravity="end|center"
+               android:gravity="center"
+               android:textStyle="bold"
+               android:layout_marginEnd="20dp"
+               android:textColor="@color/white"
+               android:textSize="20sp"/>
+
+
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0583EA"
+        app:layout_constraintTop_toBottomOf="@+id/cardview1"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview2"
+        app:layout_constraintTop_toBottomOf="@+id/cardview1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steady"
+            android:padding="20dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#0583EA" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:background="@drawable/circle"
+            android:layout_gravity="end|center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#0583EA"
+        app:layout_constraintTop_toBottomOf="@+id/cardview2"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#0583EA"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
